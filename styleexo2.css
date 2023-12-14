@@ -46,6 +46,12 @@ body {
 
 }
 
+.profil img:hover {
+    cursor: pointer;
+    height: 8rem;
+    width: 8rem;
+}
+
 .profil h4 {
     display: grid;
     color: dimgray;
@@ -68,6 +74,14 @@ body {
     display: flex;
     color: red;
 
+}
+
+.title h4:hover {
+    cursor: pointer;
+}
+
+.title i:hover {
+    cursor: pointer;
 }
 
 .title i {
@@ -101,7 +115,7 @@ table thead th {
 .btn {
     padding: .8rem;
     border-radius: 10px;
-    
+
 
 }
 
@@ -114,13 +128,14 @@ table thead th {
 .btn-success {
     background-color: green;
     color: white;
-    
+
 
 }
 
 .btn-success:hover {
     background-color: rgb(2, 175, 2);
     color: white;
+    cursor: pointer;
 }
 
 .btn-danger {
@@ -146,4 +161,19 @@ table tbody tr td {
 
 table tbody tr:last-child td {
     border: none;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    }
+
+.btn-primary:hover::after {
+    content: 'voir';
+    white-space: nowrap;
+    
+}
+
+.btn-success:hover::after{
+    content: 'voir';
+    white-space: nowrap;
 }
